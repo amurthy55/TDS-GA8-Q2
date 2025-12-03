@@ -1,76 +1,68 @@
 ---
 marp: true
-theme: gaia
+title: Product Documentation Presentation
+author: 25ds2000003@ds.study.iitm.ac.in
+description: Technical Product Documentation using Marp + Markdown
 paginate: true
 paginator: true
-pageNumber: true
-footer: "Contact: 25ds2000003@ds.study.iitm.ac.in | IIT Madras"
+_pageNumber: true
+headingDivider: 1
+theme: default
 style: |
   section {
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #f6f7fa;
     color: #222;
+    font-family: 'Segoe UI', system-ui, sans-serif;
   }
-  section.lead h1 {
-    color: #1a5fb4;
-    text-align: center;
-    font-size: 2.2em;
+  h1, h2, h3 { 
+    color: #0d47a1; 
+    font-weight: 700;
   }
+  a { color: #007bff; }
+  code { 
+    background: #e3f2fd; 
+    padding: 2px 6px; 
+    border-radius: 4px; 
+    font-size: 0.9em;
+  }
+  pre { background: #263238 !important; color: #cddc39 !important; }
   section::after {
-    content: attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);
+    font-size: 0.75em;
     color: #666;
-    font-size: 0.8em;
-  }
-  code {
-    background: #f4f4f4;
-    padding: 2px 6px;
-    border-radius: 4px;
-  }
-  pre {
-    background: #2d2d2d !important;
-    color: #f8f8f2 !important;
-    border-radius: 8px;
-  }
-  blockquote {
-    border-left: 5px solid #1a5fb4;
-    background: #f0f4f8;
-    padding: 1em;
-    margin: 1em 0;
   }
 ---
 
-<!-- _theme: gaia -->
-<!-- _class: lead gaia -->
-<!-- backgroundColor: #0d3b66 -->
+<!-- _class: lead -->
+![bg opacity:0.25](https://images.unsplash.com/photo-1517180107641-cdf0c8122361?auto=format&fit=crop&q=90&w=2400)
 
-![bg opacity:0.3](https://images.unsplash.com/photo-1518432031352-d65fc6c30292?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80)
+# Product Documentation Presentation
 
-# Product Documentation  
-**AcmeFlow v2.4**  
-High-Performance Data Pipeline Engine
-
-<span style="font-size:0.7em; color:#faf0ca">25ds2000003@ds.study.iitm.ac.in</span>
+### 25ds2000003@ds.study.iitm.ac.in  
+*IIT Madras – Diploma in Data Science*
 
 ---
 
-# Why AcmeFlow?
+# Documentation Goals
 
-- **Blazing fast** processing with zero-copy architecture
-- **Fault-tolerant** streaming with exactly-once semantics
-- Supports **real-time** and **batch** workloads
-- Built on Rust for memory safety and performance
+- Fully version-controlled with Git
+- One source → HTML • PDF • PPTX
+- Engineer-friendly Markdown syntax
+- Full support for LaTeX math, code, diagrams, and backgrounds
 
-> "AcmeFlow reduced our pipeline latency from 12s to 180ms"  
-> — Lead Engineer, Fortune 500 Bank
+> This deck is written entirely in Markdown + Marp
 
 ---
 
-# Core Architecture
+# Product Overview – AcmeSDK v3
 
-```mermaid
-graph TD
-    A[Source Connectors] --> B[Processing Engine]
-    B --> C[Transformation Nodes]
-    C --> D[Sink Connectors]
-    B --> E[State Store (RocksDB)]
-    E --> B
-    style B fill:#1a5fb4,stroke:#fff,color:#fff
+- TypeScript-first SDK
+- REST + GraphQL clients
+- Built-in resilience (retry, circuit-breaker, rate limiting)
+- 99.99% SLA
+
+---
+
+# Installation
+
+```bash
+npm install @acme/sdk
