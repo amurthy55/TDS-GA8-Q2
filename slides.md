@@ -3,6 +3,7 @@ marp: true
 title: Product Documentation Presentation
 author: 25ds2000003@ds.study.iitm.ac.in
 paginate: true
+theme: default
 style: |
   /* Embedded Custom Theme */
   section {
@@ -23,38 +24,3 @@ style: |
     opacity: 0.5;
   }
 ---
-
-<!-- _class: lead -->
-# Product Documentation Presentation
-### by **25ds2000003@ds.study.iitm.ac.in**
-
----
-
-## Documentation Goals
-
-- Maintainable in version control (Git)
-- Convert to HTML / PDF / PPTX
-- Developer-friendly authoring
-- Reusable custom theme
-- Works with Marp VS Code extension
-
-> This slide deck is **100% Markdown**, not PowerPoint.
-
----
-
-## Product Overview
-
-- Developer-first API toolkit
-- REST & GraphQL support
-- OAuth2 / JWT authentication
-- SLA commitment: 99.9%
-- Observability: metrics, traces, logs
-
----
-
-## Installation
-
-To install the SDK:
-
-```bash
-npm install @company/sdk
