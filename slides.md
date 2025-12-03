@@ -46,17 +46,17 @@ To install the SDK:
 
 ```bash
 npm install @company/sdk
-Usage example:
+```
 
-ts
-Copy code
+## Usage example:
 import { Client } from "@company/sdk";
 
 const api = new Client({ token: process.env.API_KEY });
 
 const users = await api.users.list();
 console.log(users);
-Design Principles
+
+##Design Principles
 Declarative configuration
 
 Zero-trust access patterns
