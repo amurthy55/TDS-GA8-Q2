@@ -116,18 +116,15 @@ These metrics guide batching, indexing, and worker sizing.
 <!-- _class: lead -->
 # Architecture Overview
 
----
+### Core Subsystems
+- Ingress Controller
+- API Gateway
+- Queue Workers
+- Compute Executors
+- Event Streaming Bus
 
-## Core Subsystems
-
-- **Ingress Controller**
-- **API Gateway**
-- **Queue Workers**
-- **Compute Executors**
-- **Event Streaming Bus**
 
 ---
-
 ## Component Responsibilities
 
 ### API Gateway
