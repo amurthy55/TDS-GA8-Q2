@@ -18,9 +18,47 @@ style: |
   a {
     color: #007bff;
   }
+  code {
+    font-size: 0.9em;
+  }
   footer {
     text-align: right;
     font-size: 0.7em;
     opacity: 0.5;
   }
 ---
+
+<!-- _class: lead -->
+# Product Documentation Presentation  
+### by **25ds2000003@ds.study.iitm.ac.in**
+
+---
+
+## Documentation Goals
+
+- Maintainable via version control (Git)
+- Exportable → **HTML / PDF / PPTX**
+- Reusable & tech-friendly
+- Support for math, theme, and code
+- Minimal tool friction for engineers
+
+> This presentation is written **100% in Markdown** using Marp.
+
+---
+
+## Product Overview
+
+- Developer-first API SDK
+- REST & GraphQL support
+- OAuth2 / JWT authentication
+- SLA commitment: **99.9% uptime**
+- Observability: metrics • traces • logs
+
+---
+
+## Installation
+
+To install the SDK:
+
+```bash
+npm install @company/sdk
