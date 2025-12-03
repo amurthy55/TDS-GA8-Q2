@@ -1,64 +1,76 @@
 ---
 marp: true
-title: Product Documentation Presentation
-author: 25ds2000003@ds.study.iitm.ac.in
+theme: gaia
 paginate: true
-theme: default
+paginator: true
+pageNumber: true
+footer: "Contact: 25ds2000003@ds.study.iitm.ac.in | IIT Madras"
 style: |
-  /* Embedded Custom Theme */
   section {
-    background-color: #f6f7fa;
+    font-family: "Helvetica Neue", Arial, sans-serif;
     color: #222;
-    font-family: 'Segoe UI', sans-serif;
   }
-  h1, h2, h3 {
-    color: #0d47a1;
-    font-weight: 700;
+  section.lead h1 {
+    color: #1a5fb4;
+    text-align: center;
+    font-size: 2.2em;
   }
-  a {
-    color: #007bff;
+  section::after {
+    content: attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);
+    color: #666;
+    font-size: 0.8em;
   }
   code {
-    font-size: 0.9em;
+    background: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 4px;
   }
-  footer {
-    text-align: right;
-    font-size: 0.7em;
-    opacity: 0.5;
+  pre {
+    background: #2d2d2d !important;
+    color: #f8f8f2 !important;
+    border-radius: 8px;
+  }
+  blockquote {
+    border-left: 5px solid #1a5fb4;
+    background: #f0f4f8;
+    padding: 1em;
+    margin: 1em 0;
   }
 ---
 
-<!-- _class: lead -->
-# Product Documentation Presentation  
-### by **25ds2000003@ds.study.iitm.ac.in**
+<!-- _theme: gaia -->
+<!-- _class: lead gaia -->
+<!-- backgroundColor: #0d3b66 -->
+
+![bg opacity:0.3](https://images.unsplash.com/photo-1518432031352-d65fc6c30292?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80)
+
+# Product Documentation  
+**AcmeFlow v2.4**  
+High-Performance Data Pipeline Engine
+
+<span style="font-size:0.7em; color:#faf0ca">25ds2000003@ds.study.iitm.ac.in</span>
 
 ---
 
-## Documentation Goals
+# Why AcmeFlow?
 
-- Maintainable via version control (Git)
-- Exportable → **HTML / PDF / PPTX**
-- Reusable & tech-friendly
-- Support for math, theme, and code
-- Minimal tool friction for engineers
+- **Blazing fast** processing with zero-copy architecture
+- **Fault-tolerant** streaming with exactly-once semantics
+- Supports **real-time** and **batch** workloads
+- Built on Rust for memory safety and performance
 
-> This presentation is written **100% in Markdown** using Marp.
-
----
-
-## Product Overview
-
-- Developer-first API SDK
-- REST & GraphQL support
-- OAuth2 / JWT authentication
-- SLA commitment: **99.9% uptime**
-- Observability: metrics • traces • logs
+> "AcmeFlow reduced our pipeline latency from 12s to 180ms"  
+> — Lead Engineer, Fortune 500 Bank
 
 ---
 
-## Installation
+# Core Architecture
 
-To install the SDK:
-
-```bash
-npm install @company/sdk
+```mermaid
+graph TD
+    A[Source Connectors] --> B[Processing Engine]
+    B --> C[Transformation Nodes]
+    C --> D[Sink Connectors]
+    B --> E[State Store (RocksDB)]
+    E --> B
+    style B fill:#1a5fb4,stroke:#fff,color:#fff
