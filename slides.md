@@ -114,6 +114,7 @@ These metrics guide batching, indexing, and worker sizing.
 
 <!-- _backgroundImage: url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f') -->
 <!-- _class: lead -->
+
 # Architecture Overview
 
 ---
