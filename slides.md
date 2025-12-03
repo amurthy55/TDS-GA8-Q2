@@ -3,31 +3,42 @@ marp: true
 title: Product Documentation Presentation
 author: 25ds2000003@ds.study.iitm.ac.in
 paginate: true
-Styles: custom-tech
 style: |
+  /* Embedded Custom Theme */
+  section {
+    background-color: #f6f7fa;
+    color: #222;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  h1, h2, h3 {
+    color: #0d47a1;
+    font-weight: 700;
+  }
+  a {
+    color: #007bff;
+  }
   footer {
-    font-size: 0.6em;
     text-align: right;
-    opacity: 0.6;
+    font-size: 0.7em;
+    opacity: 0.5;
   }
 ---
 
 <!-- _class: lead -->
-
 # Product Documentation Presentation
-
 ### by **25ds2000003@ds.study.iitm.ac.in**
 
 ---
 
-## Goals
+## Documentation Goals
 
-- 🧩 Maintainable in version control (Git)
-- 📦 Easily exportable → PDF / HTML / PPTX
-- 🧰 Consistent engineering documentation
-- 🔁 Reusable theme + structure
+- Maintainable in version control (Git)
+- Convert to HTML / PDF / PPTX
+- Developer-friendly authoring
+- Reusable custom theme
+- Works with Marp VS Code extension
 
-> Built using **Marp Markdown**, ideal for developer documentation pipelines.
+> This slide deck is **100% Markdown**, not PowerPoint.
 
 ---
 
@@ -35,8 +46,9 @@ style: |
 
 - Developer-first API toolkit
 - REST & GraphQL support
-- Secure OAuth2 authentication
-- SLA: 99.9% uptime
+- OAuth2 / JWT authentication
+- SLA commitment: 99.9%
+- Observability: metrics, traces, logs
 
 ---
 
@@ -46,89 +58,3 @@ To install the SDK:
 
 ```bash
 npm install @company/sdk
-```
-
-## Usage example:
-import { Client } from "@company/sdk";
-
-const api = new Client({ token: process.env.API_KEY });
-
-const users = await api.users.list();
-console.log(users);
-
-##Design Principles
-Declarative configuration
-
-Zero-trust access patterns
-
-Idempotent endpoints
-
-Minimized surface area
-
-Algorithmic Complexity
-Analysis model:
-
-𝑇
-(
-𝑛
-)
-=
-𝑛
-log
-⁡
-𝑛
-T(n)=nlogn
-Graph query cost:
-
-𝐶
-(
-𝑉
-,
-𝐸
-)
-=
-𝑂
-(
-𝑉
-+
-𝐸
-)
-C(V,E)=O(V+E)
-Cache performance:
-
-𝐻
-=
-cache hits
-total accesses
-H= 
-total accesses
-cache hits
-​
- 
-<!-- _backgroundImage: url('./image.jpeg') --> <!-- _class: lead -->
-Architecture Overview
-Core subsystems
-Ingress Controller
-
-API Gateway
-
-Queue processing
-
-Compute Workers
-
-Theme Notes
-A custom CSS theme (theme.css) provides:
-
-consistent typography
-
-brand-friendly colors
-
-readable contrast
-
-maintainable documentation look
-
-Contact
-📧 25ds2000003@ds.study.iitm.ac.in
-
-Submit a ticket or PR if you identify issues.
-
