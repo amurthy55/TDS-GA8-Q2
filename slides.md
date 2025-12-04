@@ -117,7 +117,9 @@ docs/
 ---
 
 <!-- backgroundColor: white -->
-<!-- _backgroundImage: url('image.jpeg') -->
+<!-- Background image -->
+
+![bg fit](image.jpeg) # Fit to slide
 <!-- _color: white -->
 
 # Version Control Best Practices
