@@ -1,9 +1,9 @@
 ---
 marp: true
-theme: default
 paginate: true
 header: 'Product Documentation Guide'
 footer: '25ds2000003@ds.study.iitm.ac.in'
+theme: default
 style: |
   @import 'default';
   
